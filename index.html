@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Insert After</title>
+</head>
+<body>
+<div id="id1">
+	<p id="para1">Welcome to my web page.</p>
+	<p id="para2">Please take a look around.</p>
+	<input id="btn" value="Insert After" type="button" onclick="insertAfter(newText, para2)"/>
+</div>
+<script>
+	function insertAfter(newNode, referenceNode) {
+	console.log(newNode);
+	console.log(referenceNode);
+	referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+            }
+	var newText = document.createTextNode("Inserted after");
+	var myDiv = document.getElementById("id1");
+	var para2 = document.getElementById("para2");
+	window.onload = function() {
+	//document.getElementById("btn").onclick = insertAfter(newText, para2);
+}
+</script>
+</body>
+</html>
