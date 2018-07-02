@@ -1,1 +1,1 @@
-# Lesson12
+Having used the insertBefore() method, you might reasonably expect that there would be an insertAfter() method available. Unfortunately, that's not so. Can you write an insertAfter() function to do this task? User similar arguments to insertBefore(), that is, insertAfter(newNode, targetNode). [Hint: Use insertBefore() and the nextSibling property.]
